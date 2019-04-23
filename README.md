@@ -15,8 +15,6 @@ License: [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.
 # core-concepts-examples
 A series of sample hApps (Holochain Apps) that explore core concepts for new Holochain developers
 
-[Holochain developer support & documentation](https://developer.holochain.org)
-
 ## Core Concepts:
 | No. | Concept | Link | Description|
 |---|---|---|---|
