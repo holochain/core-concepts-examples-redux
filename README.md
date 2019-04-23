@@ -15,6 +15,8 @@ License: [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.
 # core-concepts-examples
 A series of sample hApps (Holochain Apps) that explore core concepts for new Holochain developers
 
+[Holochain developer support & documentation](https://developer.holochain.org)
+
 ## Core Concepts:
 | No. | Concept | Link | Description|
 |---|---|---|---|
@@ -25,11 +27,6 @@ A series of sample hApps (Holochain Apps) that explore core concepts for new Hol
 | 05 | Links | [HelloBlog](https://github.com/holochain/core-concepts-examples/tree/05-HelloBlog)<br/>([new code vs. HelloValid](https://github.com/holochain/core-concepts-examples/compare/04-HelloValid...05-HelloBlog)) | Links can be used to provide other agents with awareness of the entries they want to find |
 |---|---|---|---|
 
-## Overview
-
-Holochain developer support & documentation:
-
-[https://developer.holochain.org](https://developer.holochain.org)
 
 ## Contribute
 Holochain is an open source project.  We welcome all sorts of participation and are actively working on increasing surface area to accept it.  Please see our [contributing guidelines](/CONTRIBUTING.md) for our general practices and protocols on participating in the community, as well as specific expectations around things like code formatting, testing practices, continuous integration, etc.
