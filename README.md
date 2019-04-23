@@ -16,15 +16,13 @@ License: [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.
 A series of sample hApps (Holochain Apps) that explore core concepts for new Holochain developers
 
 ## Core Concepts:
-| \# | Concept | Link | Description|
+| **\#** | **Concept** | **Code** | **Description** |
 |---|---|---|---|
-| 01 | Zome Functions | [HelloHolo](https://github.com/holochain/core-concepts-examples) | The simplest hApp possible... Use a Zome Function to return the string "Hello, Holo!" |
-| 02 | Local Source Chain | [HelloMe](https://github.com/holochain/core-concepts-examples/tree/02-HelloMe)<br/>([new code vs. HelloHolo](https://github.com/holochain/core-concepts-examples/compare/02-HelloMe)) | An agent's private entries (i.e. data) are stored only on its source chain (and not replicated to the shared DHT) |
-| 03 | Shared DHT | [HelloWorld](https://github.com/holochain/core-concepts-examples/tree/03-HelloWorld)<br/>([new code vs. HelloMe](https://github.com/holochain/core-concepts-examples/compare/02-HelloMe...03-HelloWorld)) |  An agent's public entries are stored in its source chain as well as replicated to the shared DHT |
-| 04 | Entry Validation | [HelloValid](https://github.com/holochain/core-concepts-examples/tree/04-HelloValid)<br/>([new code vs. HelloWorld](https://github.com/holochain/core-concepts-examples/compare/03-HelloWorld...04-HelloValid)) | Entries are validated before they are stored (both in the source chain and in the DHT) |
-| 05 | Links | [HelloBlog](https://github.com/holochain/core-concepts-examples/tree/05-HelloBlog)<br/>([new code vs. HelloValid](https://github.com/holochain/core-concepts-examples/compare/04-HelloValid...05-HelloBlog)) | Links can be used to provide other agents with awareness of the entries they want to find |
-
-
+| 01 | **Zome Functions** | [HelloHolo](https://github.com/holochain/core-concepts-examples) | The simplest hApp possible... Use a Zome Function to return the string "Hello, Holo!" |
+| 02 | **Local Source Chain** | [HelloMe](https://github.com/holochain/core-concepts-examples/tree/02-HelloMe) | An agent's private entries (i.e. data) are stored only on its source chain (and not replicated to the shared DHT) |
+| 03 | **Shared DHT** | [HelloWorld](https://github.com/holochain/core-concepts-examples/tree/03-HelloWorld) |  An agent's public entries are stored in its source chain as well as replicated to the shared DHT |
+| 04 | **Entry Validation** | [HelloValid](https://github.com/holochain/core-concepts-examples/tree/04-HelloValid) | Entries are validated before they are stored (both in the source chain and in the DHT) |
+| 05 | **Links** | [HelloBlog](https://github.com/holochain/core-concepts-examples/tree/05-HelloBlog) | Links can be used to provide other agents with awareness of the entries they want to find |
 
 ## Contribute
 Holochain is an open source project.  We welcome all sorts of participation and are actively working on increasing surface area to accept it.  Please see our [contributing guidelines](/CONTRIBUTING.md) for our general practices and protocols on participating in the community, as well as specific expectations around things like code formatting, testing practices, continuous integration, etc.
@@ -32,7 +30,6 @@ Holochain is an open source project.  We welcome all sorts of participation and 
 Some helpful links:
 
 * Chat with us on our [Chat Server](https://chat.holochain.org) or [Gitter](https://gitter.im/metacurrency/holochain)
-
 
 ## License
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
