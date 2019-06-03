@@ -1,0 +1,15 @@
+<html>
+<head><title>HelloHTML</title></head>
+<body>
+  <b>Result:</b> <div id="content"></div>
+</body>
+<script type="text/javascript" src="hc-web-client-0.1.3.browser.min.js"></script>
+<script>
+  window.holochainclient.connect("ws://localhost:8888").then(({callZome, close}) => {
+    callZome('test-instance', 'message_zome', 'get_message')({}).then((result) => {
+      console.log(result);
+      document.getElementById("content").innerHTML = JSON.parse(result).Ok;
+    })
+  })
+</script>
+</html>

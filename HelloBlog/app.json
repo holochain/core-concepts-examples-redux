@@ -1,0 +1,14 @@
+{
+  "name": "HelloBlog",
+  "description": "A simple hApp for saying 'Hello' to others in a blog",
+  "authors": [
+    {
+      "identifier": "Jamison M. Day <jamison.day@holo.host>",
+      "public_key_source": "",
+      "signature": ""
+    }
+  ],
+  "version": "0.1.0",
+  "dht": {},
+  "properties": null
+}

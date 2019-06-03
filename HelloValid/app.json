@@ -1,0 +1,14 @@
+{
+  "name": "HelloValid",
+  "description": "A simple hApp which validates that an entry contains 'Hello'",
+  "authors": [
+    {
+      "identifier": "Jamison M. Day <jamison.day@holo.host>",
+      "public_key_source": "",
+      "signature": ""
+    }
+  ],
+  "version": "0.1.0",
+  "dht": {},
+  "properties": null
+}

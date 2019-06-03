@@ -1,0 +1,50 @@
+<html>
+<head><title>HelloMe</title></head>
+<body>
+  
+  <b>New Message to Create:</b></br/>
+  <input id="newMessage" type="text" /><br/>
+  <button type="button" onclick="createMessage()">Create Message</button><br/>
+  <b>Created Entry Address:</b>
+  <div id="messageEntryAddress"></div><br/>
+  <br/>
+  <b>Get All Blog Messages:</b></br/>
+  <button type="button" onclick="getAllBlogMessages()">Get All Blog Messages</button><br/>
+  <b>Messages:</b></br/>
+  <div id="allBlogMessages"></div>
+
+</body>
+<script type="text/javascript" src="/Users/jmday/hc/dev/hc-web-client/dist/hc-web-client-0.1.3.browser.min.js"></script>
+<script>
+
+  function createMessage() {
+    window.holochainclient.connect("ws://localhost:8888").then(({callZome, close}) => {
+      message = document.getElementById("newMessage").value;
+      console.log("Calling ZomeFn createMessage for message:", message)
+      callZome('test-instance', 'message_zome', 'create_message')({ "message_string": message}).then((result) => {
+        console.log("result:", result)
+        document.getElementById("messageEntryAddress").innerHTML = JSON.parse(result).Ok;
+      })
+    })
+  }
+
+  function getAllBlogMessages() {
+    window.holochainclient.connect("ws://localhost:8888").then(({callZome, close}) => {
+      console.log("Calling ZomeFn getAllBlogMessages")
+      callZome('test-instance', 'message_zome', 'get_all_blog_messages')({}).then((result) => {
+        console.log("result:", result)
+        messages = JSON.parse(result).Ok;
+        var html = "<table width='100%'>";
+        for (var i = 0; i < messages.length; i++) {
+          html += "<tr bgcolor='#" + ((i % 2) ? 'eeeeee' : 'dddddd') + "'>" // alternate row color
+          html += "<td>" + messages[i].content + "</td>"
+          html += "</tr>";
+        }
+        html+="</table>";
+        document.getElementById("allBlogMessages").innerHTML = html;
+      })
+    })
+  }
+
+</script>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "HelloMe",
+  "description": "A simple hApp creating a private entry - stored on an agent's local source chain but not on the shared DHT",
+  "authors": [
+    {
+      "identifier": "Jamison M. Day <jamison.day@holo.host>",
+      "public_key_source": "",
+      "signature": ""
+    }
+  ],
+  "version": "0.1.0",
+  "dht": {},
+  "properties": null
+}

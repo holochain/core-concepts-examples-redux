@@ -1,0 +1,44 @@
+<html>
+<head><title>HelloMe</title></head>
+<body>
+  
+  <b>New Message to Create:</b></br/>
+  <input id="newMessage" type="text" /><br/>
+  <button type="button" onclick="createMessage()">Create Message</button><br/>
+  <b>Created Entry Address:</b>
+  <div id="messageEntryAddress"></div><br/>
+  <br/>
+  <b>Lookup Entry at Address:</b></br/>
+  <input id="entryAddress" type="text" size=60 /><br/>
+  <button type="button" onclick="getMessage()">Get Entry</button><br/>
+  <b>Entry Content:</b></br/>
+  <div id="entryContent"></div>
+
+</body>
+<script type="text/javascript" src="/Users/jmday/hc/dev/hc-web-client/dist/hc-web-client-0.1.3.browser.min.js"></script>
+<script>
+
+  function createMessage() {
+    window.holochainclient.connect("ws://localhost:8888").then(({callZome, close}) => {
+      message = document.getElementById("newMessage").value;
+      console.log("Calling ZomeFn createMessage for message:", message)
+      callZome('test-instance', 'message_zome', 'create_message')({ "message_string": message}).then((result) => {
+        console.log("result:", result)
+        document.getElementById("messageEntryAddress").innerHTML = JSON.parse(result).Ok;
+      })
+    })
+  }
+
+  function getMessage() {
+    window.holochainclient.connect("ws://localhost:8888").then(({callZome, close}) => {
+      address = document.getElementById("entryAddress").value;
+      console.log("Calling ZomeFn getMessage for address:", address)
+      callZome('test-instance', 'message_zome', 'get_message')({address}).then((result) => {
+        console.log("result:", result)
+        document.getElementById("entryContent").innerHTML = JSON.parse(result).Ok.content;
+      })
+    })
+  }
+
+</script>
+</html>
