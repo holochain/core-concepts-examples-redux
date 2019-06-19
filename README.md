@@ -18,13 +18,13 @@ A series of sample hApps (Holochain Apps) that explore core concepts for new Hol
 ## Core Concepts:
 | **\#** | **Concept** | **Code** | **Description** |
 |---|---|---|---|
-| 01.a | **Zome Functions** | [HelloHolo](https://github.com/holochain/core-concepts-examples/HelloHolo) | The simplest hApp possible... Use a Zome Function to return the string "Hello, Holo!" |
-| 01.b | **Test Driven Development** | [HelloTest](https://github.com/holochain/core-concepts-examples/HelloTest) | Using the testing framework and `hc test` |
-| 01.c | **Web User Interface** | [HelloHTML](https://github.com/holochain/core-concepts-examples/HelloHTML) | Talking to your hApp from a web page with `hc-web-client`. |
-| 02 | **Local Source Chain** | [HelloMe](https://github.com/holochain/core-concepts-examples/HelloMe) | An agent's private entries (i.e. data) are stored only on its source chain (and not replicated to the shared DHT) |
-| 03 | **Shared DHT** | [HelloWorld](https://github.com/holochain/core-concepts-examples/HelloWorld) |  An agent's public entries are stored in its source chain as well as replicated to the shared DHT |
-| 04 | **Links** | [HelloBlog](https://github.com/holochain/core-concepts-examples/HelloBlog) | Links can be used to provide other agents with awareness of the entries they want to find |
-| 05 | **Entry Validation** | [HelloValid](https://github.com/holochain/core-concepts-examples/HelloValid) | Entries are validated before they are stored (both in the source chain and in the DHT) |
+| 01.a | **Zome Functions** | [HelloHolo](https://github.com/holochain/core-concepts-examples/tree/master/HelloHolo) | The simplest hApp possible... Use a Zome Function to return the string "Hello, Holo!" |
+| 01.b | **Test Driven Development** | [HelloTest](https://github.com/holochain/core-concepts-examples/tree/master/HelloTest) | Using the testing framework and `hc test` |
+| 01.c | **Web User Interface** | [HelloHTML](https://github.com/holochain/core-concepts-examples/tree/master/HelloHTML) | Talking to your hApp from a web page with `hc-web-client`. |
+| 02 | **Local Source Chain** | [HelloMe](https://github.com/holochain/core-concepts-examples/tree/master/HelloMe) | An agent's private entries (i.e. data) are stored only on its source chain (and not replicated to the shared DHT) |
+| 03 | **Shared DHT** | [HelloWorld](https://github.com/holochain/core-concepts-examples/tree/master/HelloWorld) |  An agent's public entries are stored in its source chain as well as replicated to the shared DHT |
+| 04 | **Links** | [HelloBlog](https://github.com/holochain/core-concepts-examples/tree/master/HelloBlog) | Links can be used to provide other agents with awareness of the entries they want to find |
+| 05 | **Entry Validation** | [HelloValid](https://github.com/holochain/core-concepts-examples/tree/master/HelloValid) | Entries are validated before they are stored (both in the source chain and in the DHT) |
 
 ## Contribute
 Holochain is an open source project.  We welcome all sorts of participation and are actively working on increasing surface area to accept it.  Please see our [contributing guidelines](/CONTRIBUTING.md) for our general practices and protocols on participating in the community, as well as specific expectations around things like code formatting, testing practices, continuous integration, etc.
